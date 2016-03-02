@@ -1,13 +1,19 @@
 (function(exports) {
   "use strict";
 
-  function Medida(valor,tipo)  
-  {
-    /* tipo es opcional. Debería admitir  new Medida("45.2 Km") */
-    /* ademas de new Medida(45.2, "Km") */
+  function Medida(valor, tipo) { // Clase para almacenar medidas. Tipo es opcional, puede admitir new Medida("45.2 Km")
+    if (tipo == undefined) {
+      var palabras = valor.split(" ");
+      valor = palabras[0];
+      tipo = palabras[1];
+    }
+    else {
+      valor = valor;
+      tipo = tipo;
+    }
   }
   
-  function Temperatura(valor,tipo)
+  function Temperatura(valor, tipo)
   {
     /* tipo es opcional. Debería admitir new Medida("45.2 F") */
   }
