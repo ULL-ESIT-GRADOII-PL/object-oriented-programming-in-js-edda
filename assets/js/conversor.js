@@ -13,19 +13,36 @@
     }
   }
   
-  function Temperatura(valor, tipo)
-  {
-    /* tipo es opcional. Debería admitir new Medida("45.2 F") */
+  function Temperatura(valor, tipo) { // Clase para la creación de medidas de temperaturas. Herencia de Medida.
+
+    Medida.call(this, valor, tipo); // Herencia de la clase Medida.
   }
   
-  function Celsius(valor)
-  {
+  function Celsius(valor) { // Clase para la creación de medidas Celsius. Herencia de Temperatura.
+
+
+    Temperatura.call(this, valor); // Herencia de la clase Temperatura.
   }
   
-  function Farenheit(valor)
-  {
+  function Farenheit(valor) { // Clase para la creación de medidas Farenheit. Herencia de Temperatura.
+
+    Temperatura.call(this, valor); // Herencia de la clase Temperatura.
   }
   
+  function Kelvin(valor) { // Clase para la creación de medidas Kelvin. Herencia de Temperatura.
+
+    Temperatura.call(this, valor); // Herencia de la clase Temperatura.
+  }
+
+  Temperatura.prototype = new Medida(); // Necesario para realizar la herencia.
+  Temperatura.prototype.constructor = Temperatura;
+  Celsius.prototype = new Temperatura(); // Necesario para realizar la herencia.
+  Celsius.prototype.constructor = Celsius;
+  Farenheit.prototype = new Temperatura(); // Necesario para realizar la herencia.
+  Farenheit.prototype.constructor = Farenheit;
+  Kelvin.prototype = new Temperatura(); // Necesario para realizar la herencia.
+  Kelvin.prototype.constructor = Kelvin;
+
   exports.Temperatura = Temperatura;
   exports.Celsius = Celsius;
   exports.Farenheit = Farenheit;
