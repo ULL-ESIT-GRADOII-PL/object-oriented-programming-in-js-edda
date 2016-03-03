@@ -48,10 +48,10 @@
   exports.Farenheit = Farenheit;
 
   exports.convertir = function() {
-    var valor     = document.getElementById('convert').value,
+    /*var valor     = document.getElementById('convert').value,
         elemento  = document.getElementById('converted'),
         /* Extienda la RegeExp a la especificación. use una XRegExp */
-        regexp    = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([a-z,A-Z]+)\s*$/i;
+   /*     regexp    = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([a-z,A-Z]+)\s*$/i;
     valor     = valor.match(regexp);
     
     if (valor) {
@@ -73,9 +73,9 @@
         
         default:
           /* rellene este código */
-      }
+     /* }
     }
-    else
-      elemento.innerHTML = "";
-  };
+    else*/
+      elemento.innerHTML = "¡ERROR!";
+  //};
 })(this);

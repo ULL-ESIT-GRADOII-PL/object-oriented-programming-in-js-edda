@@ -28,12 +28,13 @@
       if(myWidth < myHeight) {
         document.getElementById("container").style.backgroundImage='none';
       }
-    } 
+    }
 </script> 
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">   <!-- FAVICON -->
 
 </head>
-<body onload="window_size()">
+<body>
+  <script type="text/javascript">window.onresize=window_size;</script>
   <div class="container app">
     <div class="row" id="title"><h4>Conversor</h4></div>
     <div class="row" id="container">

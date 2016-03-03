@@ -39,6 +39,10 @@ body {
     margin-right: 5%;
 }
 
+#converted {
+    color: black;
+}
+
 #container-convert {
     background: rgb(238,238,238); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
@@ -48,7 +52,7 @@ body {
     padding: 3%;
     border: 1.8px solid black;
     border-radius: 0.3em;
-    margin-right: 4%;
+    margin-right: 5%;
 }
 
 #text-converted {
