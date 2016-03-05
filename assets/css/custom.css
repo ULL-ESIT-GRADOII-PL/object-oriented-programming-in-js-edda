@@ -95,6 +95,25 @@ footer {
     background-color: #222;
 }
 
+#foot-edu {
+    float: right;
+}
+
+#foot-dani {
+    float: right;
+    margin-right: 0.4%;
+}
+
+#foot-gh {
+    float: right;
+    margin-right: 0.4%;
+}
+
+#foot-cpl {
+    float: right;
+    margin-right: 0.4%;
+}
+
 footer a {
     color: #FFF;
     text-decoration: none;
