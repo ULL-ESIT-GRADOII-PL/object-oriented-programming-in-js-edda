@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/skeleton.css"> 
   <link rel="stylesheet" href="assets/css/custom.css">
+  <script type="text/javascript" src="assets/js/xregexp.js"></script>
   <script type="text/javascript" src="assets/js/conversor.js"></script>  <!-- JS -->
-  <script type="text/javascript"> 
-    function window_size() { 
-      var myWidth = 0, myHeight = 0; 
-      if( typeof( window.innerWidth ) == 'number' ) { 
-          myWidth = window.innerWidth; 
-          myHeight = window.innerHeight; 
+  <script type="text/javascript">
+    function window_size() {
+      var myWidth = 0, myHeight = 0;
+      if( typeof( window.innerWidth ) == 'number' ) {
+          myWidth = window.innerWidth;
+          myHeight = window.innerHeight;
       } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-          myWidth = document.documentElement.clientWidth; 
-          myHeight = document.documentElement.clientHeight; 
+          myWidth = document.documentElement.clientWidth;
+          myHeight = document.documentElement.clientHeight;
       } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-          myWidth = document.body.clientWidth; 
-          myHeight = document.body.clientHeight; 
-      }  
+          myWidth = document.body.clientWidth;
+          myHeight = document.body.clientHeight;
+      }
 
       if(myWidth < myHeight) {
         document.getElementById("container").style.backgroundImage='none';
@@ -34,7 +35,7 @@
         document.getElementById("container").style.backgroundPosition= "220px";
       }
     }
-</script> 
+</script>
   <link rel="icon" type="image/png" href="assets/images/favicon.ico">   <!-- FAVICON -->
 
 </head>
@@ -54,7 +55,7 @@
       </div>
     </div>
   </div>
-  
+
   <footer>
       <div class="container">
         <div class="row">
