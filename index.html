@@ -5,52 +5,45 @@
   <meta charset="utf-8">
   <title>Conversor</title>
   <meta name="description" content="Conversor de medidas">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Mobile Specific Metas -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">   <!-- FONT -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/skeleton.css"> 
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <script type="text/javascript" src="assets/js/xregexp.js"></script>
-  <script type="text/javascript" src="assets/js/conversor.js"></script>  <!-- JS -->
-  <script type="text/javascript">
-    function window_size() {
-      var myWidth = 0, myHeight = 0;
-      if( typeof( window.innerWidth ) == 'number' ) {
-          myWidth = window.innerWidth;
-          myHeight = window.innerHeight;
-      } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-          myWidth = document.documentElement.clientWidth;
-          myHeight = document.documentElement.clientHeight;
-      } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-          myWidth = document.body.clientWidth;
-          myHeight = document.body.clientHeight;
-      }
 
-      if(myWidth < myHeight) {
-        document.getElementById("container").style.backgroundImage='none';
-      }
-      else {
-        document.getElementById("container").style.backgroundImage= "url('assets/images/coversor.png')";
-        document.getElementById("container").style.backgroundSize= "60px 120px";
-        document.getElementById("container").style.backgroundPosition= "220px";
-      }
-    }
-</script>
-  <link rel="icon" type="image/png" href="assets/images/favicon.ico">   <!-- FAVICON -->
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="assets/js/xregexp.js"></script>
+  <script type="text/javascript" src="assets/js/conversor.js"></script>
+  <script type="text/javascript" src="assets/js/hideimage.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.ico">
 
 </head>
+
 <body>
-  <script type="text/javascript">window.onresize=window_size;</script>
+  <script type="text/javascript">window.onresize = window_size;</script>
   <div class="container app">
     <div class="row" id="title"><h4>Conversor</h4></div>
     <div class="row" id="container">
       <div class="one-half column">
-        <p align="justify" id="text-example">Este conversor te permite hacer conversiones de temperaturas (Celsius, Farenheit o Kelvin).</br><b>EJEMPLO:</b> 32C to K para pasar de Celsius a Kelvin (to es opcional).</p>
-        <div id="container-convert">
+        <p align="justify" id="text-example">Este conversor te permite hacer conversiones de temperaturas (Celsius, Fahrenheit o Kelvin).</br><b>EJEMPLO:</b> 32C to K para pasar de Celsius a Kelvin (to es opcional).</p>
+        <div id="container-convertion">
           <label>Introduzca un valor</label>
-          <input id="convert" class="u-full-width" type="text" autofocus oninput="convertir();" placeholder="Introduzca un valor">
+          <input id="convert" class="u-full-width" type="text" autofocus onchange="convertir();">
           <label>Conversión</label>
           <div id="text-converted"><span class="output" id="converted"></span></div>
+          <!--<button id="button-convert">CONVERTIR</button>-->
         </div>
       </div>
     </div>
