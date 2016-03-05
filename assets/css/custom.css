@@ -1,9 +1,11 @@
 html {
     background-color: #eee;
+    overflow: hidden;
 }
 
 body {
     margin-top: -5%;
+    overflow: scroll;
 }
 
 #title {
@@ -91,6 +93,25 @@ footer {
     width: 100%;
     padding: 10px;
     background-color: #222;
+}
+
+#foot-edu {
+    float: right;
+}
+
+#foot-dani {
+    float: right;
+    margin-right: 0.4%;
+}
+
+#foot-gh {
+    float: right;
+    margin-right: 0.4%;
+}
+
+#foot-cpl {
+    float: right;
+    margin-right: 0.4%;
 }
 
 footer a {

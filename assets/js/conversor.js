@@ -2,18 +2,23 @@
   "use strict";
 
   function Medida(valor, tipo) { // Clase para almacenar medidas. Tipo es opcional, puede admitir new Medida("45.2 Km")
-    this.valor = valor;
-    this.tipo = tipo;
 
-    /*if (tipo == undefined) {
-      var palabras = valor.split(" ");
-      valor = palabras[0];
-      tipo = palabras[1];
+    if(valor && !tipo) {
+      var reg_exp = XRegExp('^(?<valor_re> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # valor \n' +
+                            '(?<tipo_re> [a-zA-Z]+)                                # tipo  \n'                                     
+                            , 'xi'); // Flags: x: allow comments and whitespaces.
+
+      var match = XRegExp.exec(valor, reg_exp);
+      var unidad = match[0];
+      this.valor = parseFloat(unidad);
+      this.tipo = match[1];
     }
-    else {
-      valor = valor;
-      tipo = tipo;
-    }*/
+    else if(valor && tipo) {
+      this.valor = valor;
+      this.tipo = tipo;
+    }
+
+    console.log("Valor: " + this.valor + ", Tipo: " + this.tipo);
   }
 
   function Temperatura(valor, tipo) { // Clase para la creación de medidas de temperaturas. Herencia de Medida.
