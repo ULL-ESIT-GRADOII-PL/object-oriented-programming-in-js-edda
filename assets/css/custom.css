@@ -2,6 +2,87 @@ html {
     background-color: #eee;
 }
 
+body {
+    margin-top: -5%;
+}
+
+#title {
+    font-family: fuente-conversor;
+    color: white;
+    background: rgb(122,188,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    border-radius: 0.4em;
+    border: 2px solid black;
+    text-shadow: -2px -2px 2px #191970, 2px -2px 2px #191970, -2px 2px 2px #191970, 2px 2px 2px #191970;
+    padding-top: 1.5%;
+    text-align: center;
+}
+
+#container { 
+    background-color: #FDF5E6;
+    padding-left: 5%;
+    padding-top: 3%;
+    border-radius: 0.2em;
+    border: 0.5px solid black;
+    padding-bottom: 3%;
+    margin-top: 1%;
+    background-image: url(../images/conversor.png);
+    background-size: 30% 80%;
+    background-position: 90%;
+    background-repeat: no-repeat;
+}
+
+#text-example {
+    margin-right: 5%;
+}
+
+#converted {
+    color: black;
+}
+
+#container-convertion {
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    padding: 3%;
+    border: 1.8px solid black;
+    border-radius: 0.3em;
+    margin-right: 5%;
+}
+
+#text-converted {
+    width: 60%;
+    height: 60px;
+    font-weight: bold;
+    padding: 1%;
+    background-color: white;
+    border-radius: 0.2em;
+    border: 0.2px solid #00BFFF;
+}
+
+/*#button-convert {
+    position: relative;
+    width: 32%;
+    height: 60px;
+    float: right;
+    margin-top: -17%;
+    margin-right: 2%;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(122,188,255); /* Old browsers */
+    /*background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    /*color: white;
+    border: 0.5px solid black;
+    font-size: 0.6em;
+}*/
 
 footer {
     position: fixed;
@@ -22,7 +103,14 @@ footer a {
 }
 
 h4 {
-    font-weight: 500;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+}
+
+
+@font-face {
+    font-family: fuente-conversor;
+    src: url(../fonts/font-web.ttf);
 }
 
 span {
