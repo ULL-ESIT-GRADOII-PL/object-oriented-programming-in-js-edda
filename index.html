@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Mobile Specific Metas -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">   <!-- FONT -->
   <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css"> 
   <link rel="stylesheet" href="assets/css/custom.css">
   <script type="text/javascript" src="assets/js/conversor.js"></script>  <!-- JS -->
   <script type="text/javascript"> 
@@ -27,6 +27,11 @@
 
       if(myWidth < myHeight) {
         document.getElementById("container").style.backgroundImage='none';
+      }
+      else {
+        document.getElementById("container").style.backgroundImage= "url('assets/images/coversor.png')";
+        document.getElementById("container").style.backgroundSize= "60px 120px";
+        document.getElementById("container").style.backgroundPosition= "220px";
       }
     }
 </script> 
